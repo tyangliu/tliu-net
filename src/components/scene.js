@@ -24,8 +24,9 @@ const Scene = ({...props}) => (
       }
       @keyframes scene-left-boat {
         0%, 100% {transform: translate(0, 0) rotate(0deg);}
-        25%, 75% {transform: translate(0, -13px) rotate(1deg);}
+        25% {transform: translate(0, -13px) rotate(1deg);}
         50% {transform: translate(0, 0) rotate(0deg);}
+        75% {transform: translate(0, -10px) rotate(-2deg);}
       }
 
       @keyframes star-forward {
