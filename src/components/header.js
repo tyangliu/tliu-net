@@ -57,6 +57,7 @@ const Header = ({siteTitle}) => {
           `}
         >
           <h1 css={css`
+            flex-basis: 35px;
             margin: 0;
             line-height: 1em;
 

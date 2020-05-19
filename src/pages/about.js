@@ -9,7 +9,7 @@ const AboutPage = () => (
   <Layout>
     <Meta title='About'/>
     <main css={css`
-      flex: 1;
+      flex: 1 1 auto;
     `}>
       <div css={css`
         max-width: 770px;

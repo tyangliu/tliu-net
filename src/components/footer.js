@@ -28,6 +28,7 @@ const Footer = () => (
         align-items: center;
         a {
           margin-right: 6px;
+          flex-basis: 22px;
         }
       `}>
         <a href='https://github.com/tyangliu' rel='noopener noreferrer' target='_blank'>
@@ -49,6 +50,7 @@ const Footer = () => (
           <Logo height={19} css={css`
             margin-top: -4px;
             margin-right: 10px;
+            flex-basis: 16px;
           `}/>
           <span css={css`
             font-size: 16px;

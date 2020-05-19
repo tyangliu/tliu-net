@@ -12,7 +12,7 @@ const IndexPage = () => (
   <Layout>
     <Meta title='Home'/>
     <main css={css`
-      flex: 1;
+      flex: 1 1 auto;
     `}>
       <div css={css`
         background: rgb(255,255,255);
@@ -44,6 +44,7 @@ const IndexPage = () => (
 
             a {
               margin-right: 8px;
+              flex-basis: 33px;
             }
           `}>
             <a href='https://github.com/tyangliu' rel='noopener noreferrer' target='_blank'>
