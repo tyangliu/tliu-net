@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import {Global, css ,jsx} from '@emotion/core';
 import {ReactComponent as SceneMain} from 'src/images/scene-main.svg';
 import {ReactComponent as SceneLeft} from 'src/images/scene-left.svg';
@@ -16,32 +15,26 @@ const Scene = ({...props}) => (
   >
     <Global styles={css`
       @keyframes scene-main-water-body {
-        0% {transform: translate(0, 0);}
+        0%, 100% {transform: translate(0, 0);}
         50% {transform: translate(5px, -10px);}
-        100% {transform: translate(0, 0);}
       }
       @keyframes scene-main-water-wave {
-        0% {transform: translate(0, 0);}
+        0%, 100% {transform: translate(0, 0);}
         50% {transform: translate(-10px, -15px);}
-        100% {transform: translate(0, 0);}
       }
       @keyframes scene-left-boat {
-        0% {transform: translate(0, 0) rotate(0deg);}
-        25% {transform: translate(0, -13px) rotate(1deg);}
+        0%, 100% {transform: translate(0, 0) rotate(0deg);}
+        25%, 75% {transform: translate(0, -13px) rotate(1deg);}
         50% {transform: translate(0, 0) rotate(0deg);}
-        75% {transform: translate(0, -10px) rotate(-2deg);}
-        100% {transform: translate(0, 0) rotate(0deg);}
       }
 
       @keyframes star-forward {
-        0% {fill: #0882cd;}
+        0%, 100% {fill: #0882cd;}
         50% {fill: #c14093;}
-        100% {fill: #0882cd;}
       }
       @keyframes star-reverse {
-        0% {fill: #c14093;}
+        0%, 100% {fill: #c14093;}
         50% {fill: #0882cd;}
-        100% {fill: #c14093;}
       }
 
       #scene-main-water-body {

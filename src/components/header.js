@@ -82,32 +82,20 @@ const Header = ({siteTitle}) => {
                 }}
                 css={css`
                   @keyframes tliu-top {
-                    0% {
+                    0%, 100% {
                       transform: rotate(0deg);
                     }
-                    10% {
+                    10%, 90% {
                       transform: rotate(-2deg);
                     }
-                    25% {
+                    25%, 75% {
                       transform: rotate(-8deg);
                     }
-                    40% {
+                    40%, 60% {
                       transform: rotate(-13deg);
                     }
                     50% {
                       transform: rotate(-15deg);
-                    }
-                    60% {
-                      transform: rotate(-13deg);
-                    }
-                    75% {
-                      transform: rotate(-8deg);
-                    }
-                    90% {
-                      transform: rotate(-2deg);
-                    }
-                    100% {
-                      transform: rotate(0deg);
                     }
                   }
                   animation: tliu-top 2s linear infinite;
