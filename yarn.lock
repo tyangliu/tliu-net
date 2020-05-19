@@ -11149,6 +11149,13 @@ react-lifecycles-compat@^3.0.4:
   resolved "https://registry.yarnpkg.com/react-lifecycles-compat/-/react-lifecycles-compat-3.0.4.tgz#4f1a273afdfc8f3488a8c516bfda78f872352362"
   integrity sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
 
+react-page-visibility@^6.2.0:
+  version "6.2.0"
+  resolved "https://registry.yarnpkg.com/react-page-visibility/-/react-page-visibility-6.2.0.tgz#bae8a905f996eb0a2d20b86d59053cb3b3e72415"
+  integrity sha512-jCXAMx+8tioRoviWuaJqcAfu3DzQ3JBQBUn0KoneTQ0FQqMSpNWU4VbUuyVm9+i8+8T0beeDv1aV7VZq280vBA==
+  dependencies:
+    prop-types "^15.7.2"
+
 react-reconciler@^0.24.0:
   version "0.24.0"
   resolved "https://registry.yarnpkg.com/react-reconciler/-/react-reconciler-0.24.0.tgz#5a396b2c2f5efe8554134a5935f49f546723f2dd"
