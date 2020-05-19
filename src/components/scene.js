@@ -99,7 +99,7 @@ const Scene = ({...props}) => (
       </div>
       <div css={css`
         position: absolute;
-        left: 0;
+        left: 10px;
       `}>
         <SceneLeft width={397} height={305}/>
       </div>
