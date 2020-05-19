@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Global, css ,jsx } from '@emotion/core';
+import {Global, css ,jsx} from '@emotion/core';
 import {ReactComponent as SceneMain} from 'src/images/scene-main.svg';
 import {ReactComponent as SceneLeft} from 'src/images/scene-left.svg';
 import {ReactComponent as SceneRight} from 'src/images/scene-right.svg';
 
-const Scene = ({ ...props }) => (
+const Scene = ({...props}) => (
   <div
     css={css`
       height: 380px;

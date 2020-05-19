@@ -1,14 +1,29 @@
-import React, {useState} from 'react';
+import React, {useState, useRef} from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'gatsby';
-import { css, jsx } from '@emotion/core';
+import {Link} from 'gatsby';
+import {css, jsx} from '@emotion/core';
 import {ReactComponent as Logo} from 'src/images/logo.svg';
 
-const Header = ({ siteTitle }) => {
+const Header = ({siteTitle}) => {
   const [isHovering, setIsHovering] = useState(false);
-  const pauseHandler = e => {
-    setIsHovering(false);
-    e.target.removeEventListener('animationiteration', pauseHandler);
+  const [isRunning, setIsRunning] = useState(false);
+
+  const logoRef = useRef(null);
+  const isHoveringRef = useRef(false);
+
+  isHoveringRef.current = isHovering;
+
+  const pauseHandler = () => {
+    if (isHoveringRef.current) {
+      return;
+    }
+    setIsRunning(false);
+    if (logoRef.current) {
+      logoRef.current.removeEventListener(
+        'animationiteration',
+        pauseHandler,
+      );
+    }
   };
 
   return (
@@ -35,11 +50,20 @@ const Header = ({ siteTitle }) => {
           }
         `}>
           <Link to='/' draggable={false}>
-            <Logo
-              height={42}
-              onMouseEnter={() => setIsHovering(true)}
-              onMouseLeave={e => {
-                e.target.addEventListener('animationiteration', pauseHandler);
+            <div
+              ref={logoRef}
+              onMouseEnter={() => {
+                setIsHovering(true);
+                setIsRunning(true);
+              }}
+              onMouseLeave={() => {
+                setIsHovering(false);
+                if (logoRef.current) {
+                  logoRef.current.addEventListener(
+                    'animationiteration',
+                    pauseHandler,
+                  );
+                }
               }}
               css={css`
                 @keyframes tliu-top {
@@ -72,9 +96,11 @@ const Header = ({ siteTitle }) => {
                   }
                 }
                 animation: tliu-top 2s linear infinite;
-                animation-play-state: ${isHovering ? 'running': 'paused'};
+                animation-play-state: ${isRunning ? 'running': 'paused'};
               `}
-            />
+            >
+              <Logo height={42}/>
+            </div>
           </Link>
         </h1>
         <nav css={css`

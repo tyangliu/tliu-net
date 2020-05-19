@@ -6,14 +6,14 @@
  */
 
 import React from 'react';
-import { Global, css, jsx } from '@emotion/core';
+import {Global, css, jsx} from '@emotion/core';
 import emotionReset from 'emotion-reset';
 import PropTypes from 'prop-types';
-import { useStaticQuery, graphql } from 'gatsby';
+import {useStaticQuery, graphql} from 'gatsby';
 
 import Header from './header'
 
-const Layout = ({ children }) => {
+const Layout = ({children}) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {

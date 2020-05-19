@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'gatsby';
-import { css, jsx } from '@emotion/core';
+import {Link} from 'gatsby';
+import {css, jsx} from '@emotion/core';
 
 import {ReactComponent as Logo} from 'src/images/logo.svg';
 import {ReactComponent as GHIcon} from 'src/images/gh-icon.svg';
