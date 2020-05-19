@@ -31,10 +31,10 @@ const Footer = () => (
         }
       `}>
         <a href='https://github.com/tyangliu' rel='noopener noreferrer' target='_blank'>
-          <GHIcon height={19} />
+          <GHIcon height={22} />
         </a>
         <a href='https://linkedin.com/in/tyangliu' rel='noopener noreferrer' target='_blank'>
-          <LIIcon height={19} />
+          <LIIcon height={22} />
         </a>
       </div>
       <div css={css`
