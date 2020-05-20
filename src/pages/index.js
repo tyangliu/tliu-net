@@ -19,12 +19,14 @@ const IndexPage = () => (
         background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.8) 20%, rgba(255,255,255,1) 48%);
       `}>
         <div css={css`
-          max-width: 770px;
+          max-width: 40.53rem;
           margin: 0 auto;
-          padding: 60px 19px 0;
+          padding: 3.48rem 1rem 0;
           
         `}>
           <p css={css`
+            margin-bottom: 0;
+
             &::after {
               content: "—";
               display: block;
@@ -40,18 +42,19 @@ const IndexPage = () => (
           </p>
           <div css={css`
             display: flex;
-            margin-top: 10px;
+            padding-top: 0.5rem;
+            padding-bottom: 0.73rem;
 
             a {
-              margin-right: 8px;
-              flex-basis: 33px;
+              margin-right: 0.42rem;
+              flex-basis: 1.74rem;
             }
           `}>
             <a href='https://github.com/tyangliu' rel='noopener noreferrer' target='_blank'>
-              <GHIcon height={33} />
+              <GHIcon height='1.74rem' />
             </a>
             <a href='https://linkedin.com/in/tyangliu' rel='noopener noreferrer' target='_blank'>
-              <LIIcon height={33} />
+              <LIIcon height='1.74rem' />
             </a>
           </div>
         </div>

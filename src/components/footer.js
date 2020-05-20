@@ -8,33 +8,36 @@ import {ReactComponent as LIIcon} from 'src/images/li-icon.svg';
 
 const Footer = () => (
   <footer css={css`
-    padding: 0 19px;
+    padding: 0 1rem;
     background: rgb(255,255,255);
   `}>
     <div
       css={css`
-        max-width: 1100px;
+        max-width: 57.9rem;
         margin: 0 auto;
-        padding: 28px 0 24px;
+        padding: 1.16rem 0 1.16rem;
         display: flex;
         align-items: center;
         justify-content: space-between;
-        line-height: 1em;
+        line-height: 1rem;
       `}
     >
       <div css={css`
         display: flex;
         align-items: center;
         a {
-          margin-right: 6px;
-          flex-basis: 22px;
+          margin-right: 0.32rem;
+          flex-basis: 1.16rem;
+          line-height: 1.16rem;
+          display: flex;
+          align-items: center;
         }
       `}>
         <a href='https://github.com/tyangliu' rel='noopener noreferrer' target='_blank'>
-          <GHIcon height={22} />
+          <GHIcon height='1.16rem'/>
         </a>
         <a href='https://linkedin.com/in/tyangliu' rel='noopener noreferrer' target='_blank'>
-          <LIIcon height={22} />
+          <LIIcon height='1.16rem'/>
         </a>
       </div>
       <div css={css`
@@ -49,13 +52,13 @@ const Footer = () => (
           `}
           onClick={() => window.scrollTo(0, 0)}
         >
-          <Logo height={19} css={css`
-            margin-top: -4px;
-            margin-right: 10px;
-            flex-basis: 16px;
+          <Logo height='1rem' css={css`
+            margin-top: -0.21rem;
+            margin-right: 0.53rem;
+            flex-basis: 1.78rem;
           `}/>
           <span css={css`
-            font-size: 16px;
+            font-size: 0.84rem;
             font-weight: bold;
           `}>
             Top
@@ -63,12 +66,12 @@ const Footer = () => (
         </button>
         <span css={css`
           color: #6e7175;
-          margin: 0 8px;
+          margin: 0 0.42rem;
         `}>
           &#183;
         </span>
         <Link to='/' css={css`
-          font-size: 16px;
+          font-size: 0.84rem;
           font-weight: bold;
         `}>
           Home

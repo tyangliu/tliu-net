@@ -12,9 +12,9 @@ const NotFoundPage = () => (
       flex: 1;
     `}>
       <div css={css`
-        max-width: 770px;
-        margin: 60px auto;
-        padding: 0 19px;
+        max-width: 40.53rem;
+        margin: 3.48rem auto;
+        padding: 0 1rem;
       `}>
       <h1>Does this page exist?</h1>
       <p><strong>4</strong>r<strong>0</strong>bably no<strong>4</strong>.</p>

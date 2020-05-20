@@ -12,27 +12,27 @@ const AboutPage = () => (
       flex: 1 1 auto;
     `}>
       <div css={css`
-        max-width: 770px;
-        margin: 60px auto;
-        padding: 0 19px;
+        max-width: 40.53rem;
+        margin: 3.48rem auto;
+        padding: 0 1rem;
 
         .date-range {
           font-style: italic;
           color: #6e7175;
           &::after {
             content: '·';
-            margin: 0 8px;
+            margin: 0 0.42rem;
           }
         }
 
         ul {
-          margin-bottom: 1em;
+          margin-bottom: 1.74rem;
         }
       `}>
         <h2 css={css`
           &::after {
-            font-size: 19px;
-            line-height: 1.78em;
+            font-size: 1rem;
+            line-height: 1.74em;
             display: block;
             content: '—';
             color: #6e7175;

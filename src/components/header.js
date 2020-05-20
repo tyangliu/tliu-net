@@ -42,27 +42,23 @@ const Header = ({siteTitle}) => {
   return (
     <PageVisibility onChange={focusHandler}>
       <header css={css`
-        padding: 0 19px;
+        padding: 0 1rem;
         background: rgb(255,255,255);
       `}>
         <div
           css={css`
-            max-width: 1100px;
+            max-width: 57.9rem;
             margin: 0 auto;
-            padding: 28px 0 24px;
+            padding: 1.26rem 0 1.37rem;
             display: flex;
             align-items: center;
             justify-content: space-between;
           `}
         >
           <h1 css={css`
-            flex-basis: 35px;
+            flex-basis: 1.84rem;
             margin: 0;
             line-height: 1em;
-
-
-            #tliu-top {
-            }
           `}>
             <Link to='/' draggable={false}>
               {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
@@ -103,18 +99,18 @@ const Header = ({siteTitle}) => {
                   animation-play-state: ${isRunning ? 'running': 'paused'};
                 `}
               >
-                <Logo height={42}/>
+                <Logo height='2.21rem'/>
               </div>
             </Link>
           </h1>
           <nav css={css`
             a {
               color: #6e7175;
-              font-size: 16px;
+              font-size: 0.84rem;
               font-weight: bold;
               font-style: italic;
               text-decoration: none;
-              margin-left: 3em;
+              margin-left: 2.5rem;
               display: inline-block;
               position: relative;
 
@@ -129,7 +125,7 @@ const Header = ({siteTitle}) => {
                 left: 0;
                 right: 0;
                 margin: auto;
-                width: 20px;
+                width: 1rem;
                 opacity: 0;
                 transition: opacity 0.2s;
               }

@@ -70,6 +70,7 @@ function Meta({description, lang, meta, title}) {
     >
       <link rel='preload' href='fonts.css' as='style'/>
       <link rel='stylesheet' type='text/css' href='fonts.css'/>
+      {/* <link rel="stylesheet" href="//basehold.it/33"/> */}
     </Helmet>
   );
 };

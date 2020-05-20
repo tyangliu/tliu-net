@@ -32,37 +32,38 @@ const Layout = ({children}) => {
       <Global styles={css`
         ${emotionReset}
 
-        body {
+        html, body {
           color: #3e4449;
           font-family: Rooney, serif;
           font-size: 19px;
-          line-height: 1.78em;
+          line-height: 1.74rem;
         }
 
         p {
-          margin-bottom: 19px;
+          margin-bottom: 1.74rem;
         }
 
         h1 {
-          font-size: 49px;
+          font-size: 2.58rem;
           font-weight: bold;
-          line-height: 1.5em;
+          line-height: 3.48rem;
         }
 
         h2 {
-          font-size: 33px;
+          font-size: 1.74rem;
           font-weight: bold;
-          line-height: 1.5em;
+          line-height: 1.74rem;
         }
 
         h3 {
-          font-size: 19px;
+          font-size: 1rem;
           font-weight: bold;
         }
 
         strong {
           font-weight: bold;
         }
+
         em {
           font-style: italic;
         }
@@ -72,6 +73,7 @@ const Layout = ({children}) => {
           border: none;
           outline: none;
           font-family: inherit;
+          padding: 0;
         }
 
         a, button {
