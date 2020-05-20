@@ -5,10 +5,9 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import {Helmet} from "react-helmet"
-import {useStaticQuery, graphql} from "gatsby"
+import React from 'react';
+import {Helmet} from 'react-helmet';
+import {useStaticQuery, graphql} from 'gatsby';
 
 function Meta({description, lang, meta, title}) {
   const {site} = useStaticQuery(
@@ -23,9 +22,9 @@ function Meta({description, lang, meta, title}) {
         }
       }
     `
-  )
+  );
 
-  const metaDescription = description || site.siteMetadata.description
+  const metaDescription = description || site.siteMetadata.description;
 
   return (
     <Helmet
@@ -69,22 +68,16 @@ function Meta({description, lang, meta, title}) {
         },
       ].concat(meta)}
     >
-      <link rel="stylesheet" href="https://use.typekit.net/uth8xdt.css" />
+      <link rel='preload' href='fonts.css' as='style'/>
+      <link rel='stylesheet' type='text/css' href='fonts.css'/>
     </Helmet>
-  )
-}
+  );
+};
 
 Meta.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
-};
-
-Meta.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
 };
 
 export default Meta;

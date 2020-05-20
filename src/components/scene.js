@@ -52,7 +52,7 @@ const Scene = ({...props}) => (
         main 0 1 2
         left 0 1 2 3 4 5
         right 0 1 2 3
-        main 3 4
+        main 3 4 5
 
         Initial purple
         main 0
@@ -64,7 +64,7 @@ const Scene = ({...props}) => (
         main 1 2
         left 1 2 3 4 5
         right 1 3
-        main 4
+        main 4 5
       */
       #scene-main-star-0, #scene-right-star-2, #scene-main-star-3 {
         animation: star-reverse 3s cubic-bezier(0.37, 0, 0.63, 1) infinite;
@@ -81,7 +81,7 @@ const Scene = ({...props}) => (
       #scene-left-star-1, #scene-left-star-4 {
         animation: star-forward 2s cubic-bezier(0.37, 0, 0.63, 1) infinite;
       }
-      #scene-left-star-2 {
+      #scene-left-star-2, #scene-main-star-5 {
         animation: star-forward 4s cubic-bezier(0.37, 0, 0.63, 1) infinite;
       }
 

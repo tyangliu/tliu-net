@@ -8,7 +8,6 @@
 import React from 'react';
 import {Global, css, jsx} from '@emotion/core';
 import emotionReset from 'emotion-reset';
-import PropTypes from 'prop-types';
 import {useStaticQuery, graphql} from 'gatsby';
 
 import Header from './header'
@@ -22,7 +21,7 @@ const Layout = ({children}) => {
         }
       }
     }
-  `)
+  `);
 
   return (
     <div css={css`
@@ -35,7 +34,7 @@ const Layout = ({children}) => {
 
         body {
           color: #3e4449;
-          font-family: rooney-web, serif;
+          font-family: Rooney, serif;
           font-size: 19px;
           line-height: 1.78em;
         }
@@ -68,10 +67,18 @@ const Layout = ({children}) => {
           font-style: italic;
         }
 
-        a {
+        button {
+          background: none;
+          border: none;
+          outline: none;
+          font-family: inherit;
+        }
+
+        a, button {
           color: #007ecc;
           font-style: italic;
           text-decoration: none;
+          cursor: pointer;
 
           &:hover {
             text-decoration: underline;
@@ -102,11 +109,7 @@ const Layout = ({children}) => {
       <Header siteTitle={data.site.siteMetadata.title} />
       {children}
     </div>
-  )
-};
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
+  );
 };
 
 export default Layout;

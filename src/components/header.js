@@ -1,5 +1,4 @@
 import React, {useState, useRef} from 'react';
-import PropTypes from 'prop-types';
 import {Link} from 'gatsby';
 import {css, jsx} from '@emotion/core';
 import PageVisibility from 'react-page-visibility';
@@ -66,6 +65,7 @@ const Header = ({siteTitle}) => {
             }
           `}>
             <Link to='/' draggable={false}>
+              {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
               <div
                 ref={logoRef}
                 onMouseEnter={() => {
@@ -155,10 +155,6 @@ const Header = ({siteTitle}) => {
       </header>
     </PageVisibility>
   );
-};
-
-Header.propTypes = {
-  siteTitle: PropTypes.string,
 };
 
 Header.defaultProps = {

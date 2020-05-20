@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import {Link} from 'gatsby';
 import {css, jsx} from '@emotion/core';
 
@@ -42,11 +41,14 @@ const Footer = () => (
         display: flex;
         align-items: center;
       `}>
-        <a href='' css={css`
-          display: flex;
-          align-items: center;
-          margin: 0;
-        `}>
+        <button
+          css={css`
+            display: flex;
+            align-items: center;
+            margin: 0;
+          `}
+          onClick={() => window.scrollTo(0, 0)}
+        >
           <Logo height={19} css={css`
             margin-top: -4px;
             margin-right: 10px;
@@ -58,7 +60,7 @@ const Footer = () => (
           `}>
             Top
           </span>
-        </a>
+        </button>
         <span css={css`
           color: #6e7175;
           margin: 0 8px;
