@@ -1,12 +1,11 @@
 import React from 'react';
 import {css, jsx} from '@emotion/core';
 
-import Layout from 'src/components/layout';
 import Meta from 'src/components/meta';
 import Footer from 'src/components/footer';
 
 const NotFoundPage = () => (
-  <Layout>
+  <>
     <Meta title='404 Not Found' />
     <main css={css`
       flex: 1;
@@ -21,7 +20,7 @@ const NotFoundPage = () => (
       </div>
     </main>
     <Footer/>
-  </Layout>
+  </>
 );
 
 export default NotFoundPage;

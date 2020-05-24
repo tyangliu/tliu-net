@@ -1,19 +1,18 @@
 import React from 'react';
 import {css, jsx} from '@emotion/core';
 
-import Layout from 'src/components/layout';
 import Meta from 'src/components/meta';
 import Footer from 'src/components/footer';
 
 const AboutPage = () => (
-  <Layout>
+  <>
     <Meta title='About'/>
     <main css={css`
       flex: 1 1 auto;
     `}>
       <div css={css`
         max-width: 40.53rem;
-        margin: 3.48rem auto;
+        margin: 3.48rem auto 5.22rem;
         padding: 0 1rem;
 
         .date-range {
@@ -105,7 +104,7 @@ const AboutPage = () => (
       </div>
     </main>
     <Footer/>
-  </Layout>
+  </>
 );
 
 export default AboutPage;

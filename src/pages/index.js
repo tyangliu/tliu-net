@@ -1,7 +1,6 @@
 import React from 'react';
 import {css, jsx} from '@emotion/core';
 
-import Layout from 'src/components/layout';
 import Meta from 'src/components/meta';
 import Scene from 'src/components/scene';
 
@@ -9,7 +8,7 @@ import {ReactComponent as GHIcon} from 'src/images/gh-icon.svg';
 import {ReactComponent as LIIcon} from 'src/images/li-icon.svg';
 
 const IndexPage = () => (
-  <Layout>
+  <>
     <Meta title='Home'/>
     <main css={css`
       flex: 1 1 auto;
@@ -20,9 +19,8 @@ const IndexPage = () => (
       `}>
         <div css={css`
           max-width: 40.53rem;
-          margin: 0 auto;
+          margin: 0 auto 5.22rem;
           padding: 3.48rem 1rem 0;
-          
         `}>
           <p css={css`
             margin-bottom: 0;
@@ -67,9 +65,9 @@ const IndexPage = () => (
       width: 100%;
       z-index: -1;
     `}>
-    <Scene />
+      <Scene />
     </div>
-  </Layout>
+  </>
 );
 
 export default IndexPage;

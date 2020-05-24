@@ -6,6 +6,12 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-emotion`,
+    {
+      resolve: `gatsby-plugin-layout`,
+      options: {
+        component: require.resolve('./src/components/layout.js'),
+      },
+    },
     `gatsby-plugin-preact`,
     `gatsby-plugin-preload-fonts`,
     `gatsby-plugin-react-helmet`,

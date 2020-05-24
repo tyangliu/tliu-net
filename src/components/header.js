@@ -39,6 +39,20 @@ const Header = ({siteTitle}) => {
     setTimeout(() => setIsRefocused(false), 10);
   };
 
+  const enterHandler = () => {
+    setIsHovering(true);
+    setIsRunning(true);
+  };
+  const leaveHandler = () => {
+    setIsHovering(false);
+    if (logoRef.current) {
+      logoRef.current.addEventListener(
+        'animationiteration',
+        pauseHandler,
+      );
+    }
+  };
+
   return (
     <PageVisibility onChange={focusHandler}>
       <header css={css`
@@ -64,19 +78,11 @@ const Header = ({siteTitle}) => {
               {/* eslint-disable-next-line jsx-a11y/no-static-element-interactions */}
               <div
                 ref={logoRef}
-                onMouseEnter={() => {
-                  setIsHovering(true);
-                  setIsRunning(true);
-                }}
-                onMouseLeave={() => {
-                  setIsHovering(false);
-                  if (logoRef.current) {
-                    logoRef.current.addEventListener(
-                      'animationiteration',
-                      pauseHandler,
-                    );
-                  }
-                }}
+                onMouseEnter={enterHandler}
+                onMouseLeave={leaveHandler}
+                onTouchStart={enterHandler}
+                onTouchEnd={() => setTimeout(leaveHandler, 10)}
+                onContextMenu={leaveHandler}
                 css={css`
                   @keyframes tliu-top {
                     0%, 100% {
