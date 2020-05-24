@@ -101,8 +101,7 @@ const Header = ({siteTitle}) => {
                       transform: rotate(-15deg);
                     }
                   }
-                  animation: tliu-top 2s linear infinite;
-                  animation-play-state: ${isRunning ? 'running': 'paused'};
+                  animation: ${isRunning ? 'tliu-top 2s linear infinite' : 'none'};
                 `}
               >
                 <Logo height='2.21rem'/>
