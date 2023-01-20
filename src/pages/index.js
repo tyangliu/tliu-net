@@ -33,10 +33,10 @@ const IndexPage = () => (
           `}>
             Hi, I'm <strong>Thomas Liu</strong>&mdash;I'm currently a machine learning
             engineer at&nbsp;
-            <a href='https://www.yelp.com' rel='noopener noreferrer' target='_blank'>
-              Yelp
+            <a href='https://www.amazon.com' rel='noopener noreferrer' target='_blank'>
+              Amazon
             </a>,
-            working on making inferences from reviews, photos, and usage patterns.
+            specializing in natural language, ranking, and user behavior.
           </p>
           <div css={css`
             display: flex;

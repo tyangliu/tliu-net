@@ -39,26 +39,19 @@ const AboutPage = () => (
         `}>
           More About Me
         </h2>
-        <p>I like turtles</p>
-
-        <h3>Education:</h3>
-        <ul>
-          <li>
-            <span className='date-range'>
-              Sept 2013&ndash;May 2018
-            </span>
-            <em>University of British Columbia</em>,
-            Bachelor of Science,
-            Major in Computer Science
-          </li>
-        </ul>
 
         <h3>Where I've Been:</h3>
 
         <ul>
           <li>
             <span className='date-range'>
-              Jun 2018&ndash;Present
+              Oct 2020&ndash;Present
+            </span>
+            <em>Amazon</em>, Machine Learning Engineer II
+          </li>
+          <li>
+            <span className='date-range'>
+              Jun 2018&ndash;Oct 2020
             </span>
             <em>Yelp</em>, Machine Learning Engineer
           </li>
@@ -79,6 +72,18 @@ const AboutPage = () => (
               Apr 2016&ndash;Jul 2016
             </span>
             <em>Facebook</em>, Software Engineer Intern
+          </li>
+        </ul>
+
+        <h3>Education:</h3>
+        <ul>
+          <li>
+            <span className='date-range'>
+              Sept 2013&ndash;May 2018
+            </span>
+            <em>University of British Columbia</em>,
+            Bachelor of Science,
+            Major in Computer Science
           </li>
         </ul>
 
